@@ -27,14 +27,13 @@
     border: none;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     text-transform: uppercase;
+    margin-right: 0.5rem;
 }
 
 .button:hover {
     background-color: var(--clr-orange);
     color: var(--clr-light);
 }
-
-
 
 
 
@@ -73,3 +72,25 @@
 @media (min-width: 1536px) {
     
 }
+
+
+
+/* @media (max-width: 767px) {
+    
+}
+
+@media (min-width: 768px) {
+    
+}
+
+@media (min-width: 1024px) {
+    
+}
+
+@media (min-width: 1280px) {
+    
+}
+
+@media (min-width: 1536px) {
+    
+} */

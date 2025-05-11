@@ -9,7 +9,9 @@
     --clr-orange: #ff7f50;
 
     /* sizes */
-    --size-xxs: 0.5rem;
+    --size-4xs: 0.125rem;
+    --size-3xs: 0.25rem;
+    --size-2xs: 0.5rem;
     --size-xs: 0.75rem;
     --size-sm: 1rem;
     --size-md: 1.25rem;

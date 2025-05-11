@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/components/header.css">
-    <link rel="stylesheet" href="styles/util.css">
 
     <link href="https://api.fontshare.com/v2/css?f[]=boska@200,201,400,401,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 </head>
 <body>
     <article class="container">
-        <header class="header container">
+        <header class="header">
             <nav>
+                <div class="menu__icon">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
                 <ul class="header__menu">
                     <li>
                         <a class="header__link" href="#about">About</a>
@@ -29,16 +29,32 @@
                     </li>
 
                     <button class="header__sun"id="darkMode"><i class="fa-regular fa-sun"></i></button>
-                    <a class="button" href="#">Resume</a>
+                    <a class="header button" href="#">Resume</a>
                 </ul>
+                   <button class="backBtn">←</button>
             </nav>
         </header>
         <main>
-            <section></section>
+            <section class="hero section">
+                <div class="hero__content">
+                    <img class="hero__img" src="img/profile.JPG" alt="profile picture">
+                    <h2 class="hero__title">Hi, I'm <span class="hero__name">Marlou A. Jerezon</span></h2>
+                    <p class="hero__description">A motivated IT graduate with a passion for web development and programming. Eager to apply foundational skills in building web applications, while continuously learning and exploring new technologies in the tech industry</p>
+
+                    <div class="hero__socials">
+                        <a class="facebook__social" href="https://web.facebook.com/mjjerezon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+                        <a class="github__social" href="https://github.com/Hachiji" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                        <a class="mail__social" href="mailto:marloujerezon.anhs@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+
+                </div>
+            </section>
             <section></section>
             <section></section>
         </main>
         <footer></footer>
     </article>
+    <script type="module" src="/src/main.js"></script>
 </body>
 </html>
