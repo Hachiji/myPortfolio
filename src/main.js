@@ -3,6 +3,7 @@ const cssFiles = [
     './styles/components/header.css',
     './styles/components/footer.css',
     './styles/components/hero.css',
+    './styles/components/animations.css',
     './styles/util.css'
 ];
 

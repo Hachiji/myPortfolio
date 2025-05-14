@@ -26,6 +26,8 @@
 }
 
 .hero__description {
+    text-indent: calc(var(--size-sm) * 2);
+    word-spacing: 0.5rem;
     font-size: var(--size-lg);
     color: var(--clr-slate400);
     margin-bottom: 1rem;
@@ -47,6 +49,7 @@
     font-size: var(--size-md);
     margin-top: 1rem;
     cursor: pointer;
+    transition: color 0.5s;
 }
 
 .github__social {
@@ -54,6 +57,7 @@
     font-size: var(--size-md);
     margin-top: 1rem;
     cursor: pointer;
+    transition: color 0.5s;
 }
 
 .mail__social {
@@ -61,6 +65,16 @@
     font-size: var(--size-md);
     margin-top: 1rem;
     cursor: pointer;
+    transition: color 0.5s;
+}
+
+.facebook__social:hover,
+.github__social:hover,
+.mail__social:hover {
+    transform:rotate();
+    color: var(--clr-orange);
+    display: inline-block;
+    animation: ring 0.5s;
 }
 
 
@@ -163,3 +177,4 @@
         margin-bottom: 2rem;
     }
 }
+
