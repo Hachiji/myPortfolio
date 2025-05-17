@@ -1,12 +1,3 @@
-:root {
-  --clr-orange: #FFA500;
-  --clr-dark: #000;
-  --clr-goldenrod: #DAA520;
-  --size-lg: 2rem;
-  --size-sm: 1rem;
-  --size-md: 1.25rem;
-}
-
 /* Header styles*/
 .header {
     display: flex;
@@ -127,6 +118,7 @@
     .header {
         padding-top: 1rem;
         padding-bottom: 1rem;
+        max-width: 95%;
     }
 
     .header__menu {
@@ -152,6 +144,7 @@
     .header {
         padding-top: 1.5rem;
         padding-bottom: 1.5rem;
+        max-width: 90%;
     }
 
     .header__menu {
@@ -171,12 +164,48 @@
     }
 }
 
-/* xl
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
+    .header {
+        padding-top: 1.7rem;
+        padding-bottom: 1.7rem;
+    }
 
+    .header__menu {
+        gap: 3rem;
+    }
+
+    .menu__icon {
+        display: none;
+    }
+    
+    .header__link {
+        font-size: var(--size-md);
+    }
+    
+    .header__sun {
+        font-size: var(--size-lg);
+    }
 }
 
-/*2xl
-@media (min-width: 1536px) {
+@media (min-width: 2560px) {
+    .header {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .header__menu {
+        gap: 3.5rem;
+    }
+
+    .menu__icon {
+        display: none;
+    }
     
-} */
+    .header__link {
+        font-size: var(--size-lg);
+    }
+    
+    .header__sun {
+        font-size: var(--size-xl);
+    }
+}

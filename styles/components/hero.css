@@ -11,6 +11,7 @@
     border-radius: 50%;
     width: 100%;  
     max-width: 180px;
+    box-shadow: 4px 4px 6px var(--clr-box-shadow);
 }
 
 .hero__title {
@@ -26,7 +27,7 @@
 }
 
 .hero__description {
-    text-indent: calc(var(--size-sm) * 2);
+    text-indent: var(--size-sm);
     word-spacing: 0.5rem;
     font-size: var(--size-lg);
     color: var(--clr-slate400);
@@ -102,7 +103,7 @@
     }
 
     .hero__description {
-        font-size: var(--size-sm);
+        font-size: var(--size-xs);
         margin-bottom: 0.7rem;
     }
 }
@@ -125,36 +126,65 @@
     }
 
     .hero__description {
-        font-size: var(--size-md);
+        font-size: var(--size-sm);
         margin-bottom: 1rem;
+        max-width: 70%;
     }
     
 }
 
 @media (min-width: 1024px) {
+    .hero__description {
+        max-width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: var(--size-md);
+        border-radius: 8px;
+    }
+
     .hero__img {
-    border-radius: 50%;
-    width: 100%;  
-    max-width: 170px;
+        max-width: 160px;
+        margin-bottom: 1.5rem;
     }
 
     .hero__title {
-    font-size: var(--size-2xl);
-    margin-bottom: 1.5rem;
+        font-size: var(--size-xl);
     }
 
     .hero__name {
-        font-size: var(--size-xl);
-        margin-bottom: 1.5rem;
+        font-size: var(--size-lg);
     }
 
-    .hero__description {
-        font-size: var(--size-lg);
-        margin-bottom: 1.5rem;
+    .hero__socials {
+        margin-top: 1.5rem;
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1440px) {
+    .hero__img {
+    max-width: 300px;
+    }
+
+    .hero__socials {
+        margin-top: 3rem;
+        gap: var(--size-3xl);
+    }
+
+    .facebook__social {
+        font-size: var(--size-xl);
+        margin-top: 1rem;
+    }
+
+    .github__social {
+        font-size: var(--size-xl);
+        margin-top: 1rem;
+    }
+
+    .mail__social {
+        font-size: var(--size-xl);
+        margin-top: 1rem;
+    }
+    
     .hero__title {
     font-size: var(--size-3xl);
     margin-bottom: 1.7rem;
@@ -166,14 +196,43 @@
     }
 }
 
-@media (min-width: 1536px) {
+@media (min-width: 2560px) {
+    .hero__img {
+    max-width: 400px;
+    }
+
+    .hero__socials {
+        margin-top: 3rem;
+        gap: var(--size-5xl);
+    }
+
+    .facebook__social {
+        font-size: var(--size-2xl);
+        margin-top: 1rem;
+    }
+
+    .github__social {
+        font-size: var(--size-2xl);
+        margin-top: 1rem;
+    }
+
+    .mail__social {
+        font-size: var(--size-2xl);
+        margin-top: 1rem;
+    }
+
     .hero__title {
     font-size: var(--size-4xl);
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     }
 
     .hero__name {
         font-size: var(--size-3xl);
+        margin-bottom: 2rem;
+    }
+
+    .hero__description {
+        font-size: var(--size-2xl);
         margin-bottom: 2rem;
     }
 }

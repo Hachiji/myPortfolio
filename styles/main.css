@@ -8,6 +8,12 @@
     --clr-goldenrod: #d4af37;
     --clr-orange: #ff7f50;
 
+    /*toggle colors*/
+    --clr-contrast-box: #2a2a2a;
+    --clr-text: #f4f4f4;
+    --clr-box-shadow: rgba(0, 0, 0, 0.2);
+
+
     /* sizes */
     --size-4xs: 0.125rem;
     --size-3xs: 0.25rem;
@@ -38,8 +44,16 @@ html {
 }
 
 body {
-    font-family: 'Boska', serif;
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-light);
+}
+
+/*toggle darkmode*/
+body.darkMode {
     background-color: var(--clr-dark);
+    --clr-contrast-box: #f4f4f4;
+    --clr-text: #4a4a4a;
+    --clr-box-shadow: rgba(255, 255, 255, 0.185);
 }
 
 img {

@@ -1,8 +1,10 @@
 const cssFiles = [
     './styles/main.css',
     './styles/components/header.css',
-    './styles/components/footer.css',
+    // './styles/components/footer.css',
     './styles/components/hero.css',
+    './styles/components/about.css',
+    './styles/components/project.css',
     './styles/components/animations.css',
     './styles/util.css'
 ];
@@ -16,5 +18,5 @@ cssFiles.forEach( file => {
 
 import { toggleMenu } from "./toggle.js";
 
-toggleMenu('.menu__icon', '.header__menu', '.backBtn');
+toggleMenu('.menu__icon', '.header__menu', '.backBtn', '.darkMode');
 
