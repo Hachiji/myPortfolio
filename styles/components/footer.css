@@ -1,0 +1,40 @@
+footer {
+    color: var(--clr-goldenrod);
+    padding: 1rem;
+    text-align: center;
+    font-size: var(--size-md);
+}
+
+@media (max-width: 767px) {
+    footer {
+    padding: 0.5rem;
+    font-size: var(--size-xs);
+    }
+}
+
+@media (min-width: 768px) {
+    footer {
+    padding: 0.7rem;
+    font-size: var(--size-sm);
+    }
+}
+
+@media (min-width: 1024px) {
+    footer {
+    padding: 0.9rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    footer {
+    padding: 1.1rem;
+    font-size: var(--size-md);
+    }
+}
+
+@media (min-width: 1536px) {
+    footer {
+    padding: 1.5rem;
+    font-size: var(--size-lg);
+    }
+}

@@ -9,9 +9,9 @@
     --clr-orange: #ff7f50;
 
     /*toggle colors*/
-    --clr-contrast-box: #2a2a2a;
-    --clr-text: #f4f4f4;
     --clr-box-shadow: rgba(0, 0, 0, 0.2);
+    --clr-contrast-box: #4a4a4a;
+    --clr-text: #f0f0f0;
 
 
     /* sizes */
@@ -49,11 +49,14 @@ body {
 }
 
 /*toggle darkmode*/
-body.darkMode {
-    background-color: var(--clr-dark);
-    --clr-contrast-box: #f4f4f4;
-    --clr-text: #4a4a4a;
-    --clr-box-shadow: rgba(255, 255, 255, 0.185);
+.darkMode {
+    --clr-dark: #f0f0f0;
+    --clr-light: #000;
+    --clr-slate400: #2a2a2a;
+    --clr-slate500: #2a2a2a;
+    --clr-slate600: #2a2a2a;
+    --clr-contrast-box: #f0f0f0;
+    --clr-text: #000;
 }
 
 img {

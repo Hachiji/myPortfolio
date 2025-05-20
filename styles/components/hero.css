@@ -38,48 +38,6 @@
     letter-spacing: 0.5px;
 }
 
-.hero__socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 2rem;
-}
-
-.facebook__social {
-    color: var(--clr-light);
-    font-size: var(--size-md);
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: color 0.5s;
-}
-
-.github__social {
-    color: var(--clr-light);
-    font-size: var(--size-md);
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: color 0.5s;
-}
-
-.mail__social {
-    color: var(--clr-light);
-    font-size: var(--size-md);
-    margin-top: 1rem;
-    cursor: pointer;
-    transition: color 0.5s;
-}
-
-.facebook__social:hover,
-.github__social:hover,
-.mail__social:hover {
-    transform:rotate();
-    color: var(--clr-orange);
-    display: inline-block;
-    animation: ring 0.5s;
-}
-
-
-
 /* media queries */
 @media (max-width: 767px) {
     .hero__content {

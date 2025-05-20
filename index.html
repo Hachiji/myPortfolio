@@ -10,6 +10,7 @@
 </head>
 <body>
     <article class="container">
+        <!--desktop navigation-->
         <header class="header">
             <nav>
                 <div class="menu__icon">
@@ -25,14 +26,34 @@
                     <li>
                         <a class="header__link" href="#contact">Contact</a>
                     </li>
-                        <button class="header__sun" id="darkMode">
+                        <button class="header__sun" id="themeToggle">
                             <i class="fa-regular fa-sun"></i>
                         </button>
                         <a class="header button" href="resume.html">Resume</a>
                 </ul>
-                   <button class="backBtn"><i class="fa-solid fa-arrow-left"></i></button>
             </nav>
         </header>
+        <!--Mobile navigation-->
+        <div class="mobile-nav">
+            <nav>
+                <ul class="mobile-nav__menu">
+                    <li>
+                        <a href="#about" class="mobile-nav__links">About</a></li>
+                    <li>
+                        <a href="#project" class="mobile-nav__links">Project</a></li>
+                    <li>
+                        <a href="#contact" class="mobile-nav__links">Contact</a></li>
+                    <li>
+                        <button class="mobile-nav__sun" id="themeToggle">
+                            <i class="fa-regular fa-sun"></i>
+                        </button>
+                    </li>
+                    <li>
+                        <a class="mobile-nav__button button" href="resume.html">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <main>
             <!--hero section-->
             <section class="hero section">
@@ -40,14 +61,6 @@
                     <img class="hero__img" src="img/profile.JPG" alt="profile picture">
                     <h2 class="hero__title">Hi, I'm <span class="hero__name">Marlou A. Jerezon</span></h2>
                         <p class="hero__description"> A motivated IT graduate with a passion for web development and programming. Eager to apply foundational skills in building web applications, while continuously learning and exploring new technologies in the tech industry.</p>
-
-                    <div class="hero__socials">
-                        <a class="facebook__social" href="https://web.facebook.com/mjjerezon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
-
-                        <a class="github__social" href="https://github.com/Hachiji" target="_blank"><i class="fa-brands fa-github"></i></a>
-
-                        <a class="mail__social" href="https://mail.google.com/mail/?view=cm&fs=1&to=marloujerezon.anhs@gmail.com&su=Resume%20Inquiry" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-
                 </div>
             </section>
 
@@ -57,12 +70,24 @@
                     <div class="about__separator">
                         <div class="about__text-left">
                             <h2 class="about__title">ABOUT ME</h2>
-                            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit ex voluptatibus consequuntur velit beatae temporibus mollitia delectus animi voluptatem. Debitis deserunt cumque praesentium similique repellat ex! Repellendus, maxime. Incidunt!</p>
-    
-                            <p class="about__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odit ex voluptatibus consequuntur velit beatae temporibus mollitia delectus animi voluptatem.</p>
+                                <p class="about__description">Hi, I'm Marlou A. Jerezon, a fresh graduate with a Bachelor of Science in Information Technology from Cebu Eastern College, Inc. I'm an aspiring front-end web developer with a passion for creating clean, responsive, and user-friendly websites.</p>
+        
+                                <p class="about__description">I enjoy working with HTML, CSS, and JavaScript, and I use them to build practice projects that help me sharpen my skills and explore new design ideas. While I have basic knowledge of PHP and MySQL, my main focus is on front-end development and improving my ability to build interactive and visually appealing interfaces.</p>
+                                <p class="about__description">One of my recent practice projects is XiaoMerch—a mock e-commerce platform I developed to simulate a simple purchasing system. Though it's not yet live, working on it helped me apply what I've learned and deepen my understanding of front-end development.</p>
+                                <p class="about__description">I'm currently looking for entry-level opportunities where I can grow, learn from real-world projects, and eventually dive into modern tools and frameworks like <strong>React</strong>, <strong>Vue.js</strong>or <strong>any modern languages.</strong></p>
                         </div>
                         <div class="about__picture-right">
                             <img src="img/about.JPG" alt="picture" class="about__img">
+                        </div>
+
+                        <!--skillset animation-->
+                        <div class="about__skills">
+                            <h3 class="about__skill-title">SKILLS</h3>
+                            <ul class="skill__list">
+                                <li class="skillset">HTML</li>
+                                <li class="skillset">CSS</li>
+                                <li class="skillset">JavaScript</li>
+                            </ul>
                         </div>
                     </div>
                     
@@ -70,7 +95,7 @@
             </section>
 
             <!--work project section-->
-            <section class="project section">
+            <section class="project section" id="project">
                 <div class="project__content">
                     <h2 class="project__title">PROJECT</h2>
                         <div class="project__grid">
@@ -78,30 +103,29 @@
                             <div class="project__box">
                                 <h3 class="project__subtitle">XiaoMerch</h3>
                                     <img src="img/xiaomerch.png" alt="XiaoMerch Project" class="project__img">
-                                        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit et saepe. Inventore accusantium neque laboriosam iste ducimus facere, maiores voluptates blanditiis reiciendis est deleniti iure cum vero numquam quam?</p>
-                                <a href="#" class="project__btn">Read more!</a>
-                            </div>
+                                        <p class="project__description">XiaoMerch is a purchasing system that focuses selling local merchandise in the philippines. </p>
 
-                            <!--project 2-->
-                            <div class="project__box">
-                                <h3 class="project__subtitle">XiaoMerch</h3>
-                                    <img src="img/xiaomerch.png" alt="XiaoMerch Project" class="project__img">
-                                        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit et saepe. Inventore accusantium neque laboriosam iste ducimus facere, maiores voluptates blanditiis reiciendis est deleniti iure cum vero numquam quam?</p>
-                                <a href="#" class="project__btn">Read more!</a>
+                                        <p class="project__description">This system is still on going and its not yet live. This system was created to hone my programming skills.</p>
                             </div>
-                                
-                            <!--project 3-->
-                            <div class="project__box">
-                                <h3 class="project__subtitle">XiaoMerch</h3>
-                                    <img src="img/xiaomerch.png" alt="XiaoMerch Project" class="project__img">
-                                        <p class="project__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta suscipit et saepe. Inventore accusantium neque laboriosam iste ducimus facere, maiores voluptates blanditiis reiciendis est deleniti iure cum vero numquam quam?</p>
-                                <a href="#" class="project__btn">Read more!</a>
-                            </div>
-                        </div>
+                </div>
+            </section>
+            <section class="contact section" id="contact">
+                <div class="contact__content">
+                    <h2 class="about__title">CONTACT</h2>
+                        <p class="about__description">If you have any questions or would like to connect, feel free to reach out to me through the following channels:</p>
+                            
+                        <div class="contact__socials">
+                            <a class="facebook__social" href="https://web.facebook.com/mjjerezon" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+
+                            <a class="github__social" href="https://github.com/Hachiji" target="_blank"><i class="fa-brands fa-github"></i></a>
+
+                            <a class="mail__social" href="https://mail.google.com/mail/?view=cm&fs=1&to=marloujerezon.anhs@gmail.com&su=Resume%20Inquiry" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </section>
         </main>
-        <footer></footer>
+        <footer>
+            <h4>~ Marlou A. Jerezon ~</h4>
+        </footer>
     </article>
     <script type="module" src="/src/main.js"></script>
 </body>

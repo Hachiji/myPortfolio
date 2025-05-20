@@ -44,9 +44,57 @@
     font-size: var(--size-md);
     color: var(--clr-slate400);
     text-align: justify;
-    margin-bottom: 1rem;
     line-height: 1.6em;
 }
+
+/*skillset*/
+.about__skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 0.5rem;   
+    margin-bottom: 3rem; 
+}
+
+.about__skill-title {
+    font-size: var(--size-xl);
+    color: var(--clr-goldenrod);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.skill__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    width: 100%;
+    padding: 0.5rem;    
+    animation: loop 7s linear infinite;
+}
+
+.skillset {
+    padding: 0.5rem;
+    list-style: none;
+    background-color: var(--clr-slate400);
+    color: var(--clr-goldenrod);
+    border: none;
+    border-radius: 5px;
+}
+
+.skillset:hover {
+    background-color: var(--clr-slate600);
+    color: var(--clr-orange);
+    user-select: none;
+    animation: ring 1s linear infinite;
+}
+
+
 
 /*media queries*/
 @media (max-width: 767px) {
@@ -81,6 +129,26 @@
         line-height: 1.3rem;
     }
 
+    /*skillset animation*/
+    .about__skills {
+        gap: 1rem;
+        width: 80%; 
+        margin-bottom: 1rem; 
+    }
+
+    .about__skill-title {
+        font-size: var(--size-md);
+        margin-bottom: 0.5rem;
+    }
+
+    .skill__list {
+        gap: 1rem;
+    }
+
+    .skillset {
+        font-size: var(--size-xs);
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -103,16 +171,36 @@
     }
 
     .about__title {
-        font-size: var(--size-md);
+        font-size: var(--size-lg);
         margin-bottom: 1rem;
     }
 
     .about__description {
         margin-left: 1rem;
         text-indent: 2rem;
-        font-size: var(--size-sm);
+        font-size: var(--size-md);
         margin-bottom: 0.5rem;
         line-height: 1.6rem; 
+    }
+
+    /*skillset animation*/
+    .about__skills {
+        gap: 1rem;
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .about__skill-title {
+        font-size: var(--size-lg);
+        margin-bottom: 0.5rem;
+    }
+
+    .skill__list {
+        gap: 1.5rem;
+    }
+
+    .skillset {
+        font-size: var(--size-md);
     }
 }
 
@@ -129,16 +217,36 @@
     }
 
     .about__title {
-        font-size: var(--size-md);
+        font-size: var(--size-xl);
         margin-bottom: 1.5rem;
     }
 
     .about__description {
         margin-left: 3rem;
         text-indent: 1.5rem;
-        font-size: var(--size-sm);
+        font-size: var(--size-md);
         margin-bottom: 1.5rem;
         line-height: 1.6em;
+    }
+
+    /*skillset animation*/
+    .about__skills {
+        gap: 1rem;
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .about__skill-title {
+        font-size: var(--size-xl);
+        margin-bottom: 0.5rem;
+    }
+
+    .skill__list {
+        gap: 1rem;
+    }
+
+    .skillset {
+        font-size: var(--size-md);
     }
 }
 
@@ -152,7 +260,7 @@
     }
 
     .about__title {
-        font-size: var(--size-lg);
+        font-size: var(--size-xl);
         margin-bottom: 1.5rem;
     }
 
@@ -161,6 +269,26 @@
         text-indent: 1.5rem;
         font-size: var(--size-md);
         margin-bottom: 1.6rem;
+    }
+
+    /*skillset animation*/
+    .about__skills {
+        gap: 1rem;
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .about__skill-title {
+        font-size: var(--size-2xl);
+        margin-bottom: 0.5rem;
+    }
+
+    .skill__list {
+        gap: 1rem;
+    }
+
+    .skillset {
+        font-size: var(--size-xl);
     }
 }
 
@@ -186,5 +314,25 @@
         text-indent: 1.5rem;
         font-size: var(--size-xl);
         margin-bottom: 1.6rem;
+    }
+
+    /*skillset animation*/
+    .about__skills {
+        gap: 2rem;
+        width: 100%; 
+        margin-bottom: 1rem; 
+    }
+
+    .about__skill-title {
+        font-size: var(--size-2xl);
+        margin-bottom: 2rem;
+    }
+
+    .skill__list {
+        gap: 2rem;
+    }
+
+    .skillset {
+        font-size: var(--size-xl);
     }
 }
