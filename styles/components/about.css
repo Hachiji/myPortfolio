@@ -93,14 +93,14 @@
 .skillset {
     padding: 0.5rem;
     list-style: none;
-    background-color: var(--clr-slate400);
+    background-color: gray;
     color: var(--clr-goldenrod);
     border: none;
     border-radius: 5px;
 }
 
 .skillset:hover {
-    background-color: var(--clr-slate600);
+    background-color: gray;
     color: var(--clr-orange);
     user-select: none;
     animation: ring 1s linear infinite;

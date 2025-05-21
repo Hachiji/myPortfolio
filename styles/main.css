@@ -52,9 +52,9 @@ body {
 .darkMode {
     --clr-dark: #f0f0f0;
     --clr-light: #000;
-    --clr-slate400: #2a2a2a;
-    --clr-slate500: #2a2a2a;
-    --clr-slate600: #2a2a2a;
+    --clr-slate400: #b6b3b3;
+    --clr-slate500: #b6b3b3;
+    --clr-slate600: #b6b3b3;
     --clr-contrast-box: #f0f0f0;
     --clr-text: #000;
 }
