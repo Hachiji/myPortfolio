@@ -3,12 +3,13 @@ const mobileNav = () => {
     const mobileNav = document.querySelector('.mobile-nav');
     const mobileLinks = document.querySelectorAll('.mobile-nav__links');
 
+    if (!menuBtn || !mobileNav) return;
     let isMenuOpen = false;
     
     menuBtn.addEventListener('click', () => {
         isMenuOpen = !isMenuOpen;
 
-        if(isMenuOpen === true) {
+        if(isMenuOpen === true) { 
             mobileNav.style.display = 'flex';
             document.body.style.overflowY = 'hidden';
         }

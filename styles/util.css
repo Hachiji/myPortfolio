@@ -11,8 +11,16 @@ main {
     margin: 0;
 }
 
-.section {
+section {
     margin-top: 5rem;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+
+section.animate {
+    transform: translateY(0);
+    opacity: 1;
 }
 
 .button {
@@ -45,7 +53,7 @@ main {
     .container {
         max-width: 475px;
     }
-    .section {
+    section {
         margin-top: 1rem;
     }
 }
@@ -67,7 +75,7 @@ main {
         max-width: 1024px;
     }
 
-    .section {
+    section {
         margin-top: 5rem;
     }
 }

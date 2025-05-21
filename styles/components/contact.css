@@ -16,7 +16,6 @@
 .facebook__social {
     color: var(--clr-slate400);
     font-size: var(--size-md);
-    margin-top: 1rem;
     cursor: pointer;
     transition: color 0.5s;
 }
@@ -24,7 +23,6 @@
 .github__social {
     color: var(--clr-slate400);
     font-size: var(--size-md);
-    margin-top: 1rem;
     cursor: pointer;
     transition: color 0.5s;
 }
@@ -32,7 +30,6 @@
 .mail__social {
     color: var(--clr-slate400);
     font-size: var(--size-md);
-    margin-top: 1rem;
     cursor: pointer;
     transition: color 0.5s;
 }
@@ -56,67 +53,55 @@
 
 @media (min-width: 1024px) {
     .contact__socials {
-        margin-top: 2rem;
         gap: var(--size-xl);
     }
 
     .facebook__social {
         font-size: var(--size-lg);
-        margin-top: 1rem;
     }
 
     .github__social {
         font-size: var(--size-lg);
-        margin-top: 1rem;
     }
 
     .mail__social {
         font-size: var(--size-lg);
-        margin-top: 1rem;
     }
     
 }
 
 @media (min-width: 1440px) {
     .contact__socials {
-        margin-top: 3rem;
         gap: var(--size-3xl);
     }
 
     .facebook__social {
         font-size: var(--size-xl);
-        margin-top: 1rem;
     }
 
     .github__social {
         font-size: var(--size-xl);
-        margin-top: 1rem;
     }
 
     .mail__social {
         font-size: var(--size-xl);
-        margin-top: 1rem;
     }
 }
 
 @media (min-width: 2560px) {
     .hero__socials {
-        margin-top: 3rem;
         gap: var(--size-5xl);
     }
 
     .facebook__social {
         font-size: var(--size-2xl);
-        margin-top: 1rem;
     }
 
     .github__social {
         font-size: var(--size-2xl);
-        margin-top: 1rem;
     }
 
     .mail__social {
         font-size: var(--size-2xl);
-        margin-top: 1rem;
     }
 }

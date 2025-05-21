@@ -21,7 +21,17 @@ cssFiles.forEach( file => {
 
 import mobileNav from "./mobile-nav.js";
 import darkMode from "./themeToggle.js";
+import animateOnScroll from "./animation.js";
 
 
-mobileNav();
-darkMode();
+// These function is called when the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', () => {
+    //responsiveness
+    mobileNav();
+
+    //theme toggle
+    darkMode();
+
+    //animations
+    animateOnScroll();
+});
